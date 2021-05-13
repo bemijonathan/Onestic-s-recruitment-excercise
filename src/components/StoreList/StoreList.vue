@@ -55,7 +55,7 @@ export default {
 	},
 	data() {
 		return {
-			count: 32,
+			count: 20,
 			infiniteScrollStores: [],
 			searchTerm: "",
 			oldCount: 0,
