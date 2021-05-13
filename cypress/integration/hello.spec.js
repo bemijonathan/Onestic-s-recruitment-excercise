@@ -102,10 +102,10 @@ describe('Stores Page should act properly', () => {
 
 
     // => infinite scrooll
-    it('should have 20 stores on the DOM', () => {
+    it('should have 10 stores on the DOM', () => {
         cy.visit('http://localhost:8080/restaurants')
         cy.get('.store-list .store-list__container .store-list__item').then((e) => {
-            expect(e.length).to.be.eq(20)
+            expect(e.length).to.be.eq(10)
         })
     });
 
@@ -116,7 +116,7 @@ describe('Stores Page should act properly', () => {
         cy.scrollTo('bottom').then(() => {
             cy.wait(2000).then(() =>
                 cy.get('.store-list .store-list__container .store-list__item').then((e) => {
-                    expect(e.length).to.be.greaterThan(20)
+                    expect(e.length).to.be.greaterThan(10)
                 })
             )
         })
@@ -127,7 +127,7 @@ describe('Stores Page should act properly', () => {
         cy.visit('http://localhost:8080/restaurants')
         cy.get("input").type('001').then(() => {
             cy.get('.store-list .store-list__container .store-list__item').then((e) => {
-                expect(e.length).to.be.lessThan(20)
+                expect(e.length).to.be.lessThan(30)
             })
         })
     });
