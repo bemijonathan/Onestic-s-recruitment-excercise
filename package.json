@@ -54,7 +54,7 @@
     "not dead"
   ],
   "engines": {
-    "node": ">=14.16.0"
+    "node": ">=12.16.0"
   },
   "engineStrict": true
 }
