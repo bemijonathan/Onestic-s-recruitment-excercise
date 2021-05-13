@@ -10,13 +10,16 @@
         </video>
       </div>
       <div class="banner__text" v-if="text">
-        <span class="banner__text-message">{{ text }}</span>
+        <span class="banner__text-message text-center">{{ text }}</span>
       </div>
     </div>
   </div>
 </template>
 <style lang="scss">
 @import './Banner.scss';
+.text-center{
+  text-align: center;
+}
 </style>
 <script>
 export default {

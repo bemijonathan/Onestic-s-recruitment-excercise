@@ -1,2 +1,32 @@
+$small: 500px;
+$medium: 1100px;
+
+
 .store-list {
+  .store-list__container{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 10px;
+    justify-content: center;
+    @media screen and (max-width: $medium) {
+      grid-template-columns: repeat(3, 33.3%);
+    }
+    @media screen and (max-width: $small) {
+      grid-template-columns: repeat(2,50%);
+    }
+    .store-list__item{
+      padding: 10px;
+    }
+  }
+}
+
+.container{
+  padding: 10px;
+}
+
+.__joke_container{
+  padding: 10px;
+  background-color: aquamarine;
+  border-radius: 12px;
+  margin: 10px;
 }

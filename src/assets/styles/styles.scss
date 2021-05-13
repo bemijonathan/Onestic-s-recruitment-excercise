@@ -1,3 +1,11 @@
+$color-black: rgb(0,0,0);
+$color-white: rgb(255,255,255);
+$color-gray-light: rgba($color-white, .15);
+$color-gray-dark: rgba($color-black, .15);
+
+
+
+
 @import './variables/_color.scss';
 @import './variables/_spacing.scss';
 
@@ -33,4 +41,20 @@ html, body {
   .page {
     max-width: var(--boxed-max-width);
   }
+}
+
+
+:root {
+  --color-page-background: #{$color-white};
+  --color-text: #{$color-black};
+}
+
+body {
+  background-color: var(--color-page-background);
+  color: var(--color-text);
+}
+
+.dark {
+  --color-page-background: #{$color-black};
+  --color-text: #{$color-white};
 }
